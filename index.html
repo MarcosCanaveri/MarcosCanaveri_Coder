@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Rochester&display=swap" rel="stylesheet">
+
+    <!-- link css-->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Planazo</title>
+</head>
+
+<body>
+    <header id="header">
+
+        <a class="logo" href="index.html">
+            <img src="./img/logo-planazo.jpg" alt="Logo Planazo">
+            <span>PLANAZO</span>
+        </a>
+        <!--nav-->
+        <nav>
+            <ul>
+                <li><a href="./pages/recomendados.html">recomendados</a></li>
+                <li><a href="./pages/rankings.html">rankings</a></li>
+                <li><a href="./pages/lo-que-viene.html">lo que viene</a></li>
+                <li><a href="./pages/trabaja-con-nosotros.html">trabaja con nosotros</a></li>
+            </ul>
+
+        </nav>
+        <button class="boton">Registrate</button>
+    </header>
+
+    <!--main-->
+    <main>
+        <section>
+            <h1>Bienvenidos al entretenimiento</h1>
+
+            <p>En este sitio vas a encontrar los mejores planes para romper la rutina</p>
+
+            <h2>Destacados</h2>
+
+            <h3>Estos son los lugares más visitados</h3>
+        </section>
+
+    </main>
+
+    <!--section-->
+    <section>
+
+        <div class="contenedor">
+            <div class="elemento">
+                <article>
+                    <h4>Ciudad de Buenos Aires</h4>
+                    <h5>Jardin japones</h5>
+                    <img src="./img/jardin-japones.jpg" alt="Jardín japonés">
+                    <p>El jardin japones se destaca por sumergirnos en la cultura nipona</p>
+                </article>
+            </div>
+
+            <div class="elemento">
+                <article>
+                    <h4>Zona norte</h4>
+                    <h5>Temaiken</h5>
+                    <img src="./img/temaiken.jpg" alt="Temaikén">
+                    <p>Temaiken es el bioparque por excelencia</p>
+                </article>
+            </div>
+
+            <div class="elemento">
+                <article>
+                    <h4>Zona oeste</h4>
+                    <h5>Campanopolis</h5>
+                    <img src="./img/campanopolis.jpg" alt="Campanopolis">
+                    <p>Campanopolis te transporta a la era medieval</p>
+                </article>
+            </div>
+
+            <div class="elemento">
+                <article>
+                    <h4>Zona sur</h4>
+                    <h5>Ferroclub Escalada</h5>
+                    <img src="./img/ferroclub-escalada.jpg" alt="Ferroclub de Remedios de Escalada">
+                    <p>Ferroclub de Escalada es el lugar ideal para los fanáticos de los trenes</p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Formulario-->
+    <section>
+
+        <form>
+            <h4>Recibe informacion para saber donde y cuando divertirte</h4>
+
+            <div class="label"></div>
+            <label for="nombre">Ingrese su nombre</label>
+            <input id="nombre" type="text" required placeholder="Juan">
+            </div>
+
+            <div class="label"></div>
+            <label for="apellido">Ingrese su apellido</label>
+            <input id="apellido" type="text" required placeholder="Lopez">
+            </div>
+
+            <div class="label"></div>
+            <label for="email">Ingrese su email</label>
+            <input id="email" type="email" placeholder="planazo@gmail.com">
+            </div>
+
+            <div class="label"></div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpiar">
+            </div>
+
+            <div class="label"></div>
+            <input type="checkbox" id="acepto">
+            <label for="acepto">Acepto recibir información a mi casilla de correo electrónico</label>
+            </div>
+        </form>
+
+    </section>
+
+    <!--inicio-->
+    <section>
+        <a href="#header" class="inicio">Volver al inicio</a>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer" class="lqvfooter">
+
+        <span>Contactanos</span>
+
+        <div>
+            <ul>
+                <li>correo electronico planazo@gmail.com</li>
+                <li>Teléfono 41234567</li>
+                <li>Horario de atención: Lunes a viernes de 9 a 18hs</li>
+                <li>Dirección Viamonte 1162 CABA</li>
+                <li><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.140667867542!2d-58.38321650000001!3d-34.60060429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac880786045%3A0x31c36d9e974f1c73!2sViamonte%201162%2C%20C1053ABX%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1742841617124!5m2!1ses!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <!-- link bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

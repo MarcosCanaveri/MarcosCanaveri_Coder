@@ -1,0 +1,259 @@
+/*variables CSS*/
+:root {
+    --main-backgroundcolor: #540d6e;
+    --main-color-secondary: #ee4266;
+    --main-text-color: #0ead69;
+    --main-text-light: #3bceac;
+    --main-extra-color: #ffd23f;
+}
+
+/*reset con selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** LAYOUT *****/
+/* Header*/
+header {
+    background-color: var(--main-backgroundcolor);
+    color: var(--main-text-color);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header a {
+    color: var(--main-extra-color);
+    font-size: 18px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+/* main*/
+main {
+    background-color: var(--main-color-secondary);
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+    text-decoration-color: var(--main-text-color);
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+main p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+main section h2 {
+    color: var(--main-text-light);
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+main section h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+main section h4 {
+    font-size: 22px;
+}
+
+main section h5 {
+    font-size: 20px;
+}
+
+/*****section*****/
+section {
+    background-color: var(--main-color-secondary);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.elemento {
+    background-color: var(--main-color-secondary);
+    width: 20%;
+    padding: 20px;
+    min-width: 200px;
+}
+
+section article img {
+    width: 350px;
+    height: 200px;
+}
+
+/*****formulario*****/
+section form {
+    padding-top: 20px;
+    text-align: start;
+}
+
+/*****inicio*****/
+.inicio {
+    color: var(--main-extra-color);
+}
+
+/*****footer*****/
+#footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/***** Componentes ******/
+.boton {
+    background-color: var(--main-extra-color);
+    color: var(--main-backgroundcolor);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/***** Pages *****/
+/*** Lo que viene ***/
+.lqvbody {
+    background-color: var(--main-backgroundcolor);
+    color: var(--main-text-color);
+    font-size: 24px;
+    display: flex;
+    display: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "lqvheader    lqvheader lqvheader  lqvheader"
+        "lqvsection1  lqvmain   lqvsection lqvaside"
+        "lqvsection1  lqvmain   lqvsection lqvaside"
+        "lqvfooter    lqvfooter lqvfooter  lqvfooter";
+    grid-template-columns: 150px 1fr 1fr 20%;
+    grid-template-rows: auto auto auto 150px;
+}
+
+.lqvheader {
+    grid-area: lqvheader;
+    padding: 0;
+    display: flex;
+    display: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.lqvsection1 {
+    grid-area: lqvsection1;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.lqvmain {
+    grid-area: lqvmain;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.lqvsection {
+    grid-area: lqvsection;
+    background-color: green;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.lqvaside {
+    grid-area: lqvaside;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.lqvfooter {
+    grid-area: lqvfooter;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 992) {
+    .lqvbody {
+        grid-template-areas:
+            "lqvheader lqvheader   lqvheader"
+            "lqvnav    lqvsection  lqvaside"
+            "lqvnav    lqvmain     lqvaside"
+            "lqvnav    lqvfooter   lqvaside";
+        grid-template-columns: 150px 1fr 20%;
+        grid-template-rows: 200px auto auto 150px;
+    }
+}
+
+@media screen and (max-width: 768) {
+    .lqvbody {
+        grid-template-areas:
+            "lqvheader lqvaside"
+            "lqvheader lqvnav"
+            "lqvheader lqvmain"
+            "lqvheader lqvsection"
+            "lqvheader lqvfooter";
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 200px auto auto auto 150px;
+    }
+}
+
+@media screen and (max-width: 425) {
+    .lqvbody {
+        grid-template-areas:
+            "lqvheader"
+            "lqvaside"
+            "lqvnav"
+            "lqvmain"
+            "lqvsection"
+            "lqvfooter";
+        grid-template-columns: auto;
+        grid-template-rows: 100px auto auto auto auto 150px;
+    }
+}
