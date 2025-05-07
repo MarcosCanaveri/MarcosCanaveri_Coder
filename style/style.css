@@ -79,25 +79,23 @@ main h1 {
     font-family: "Bungee Tint", sans-serif;
     text-decoration-color: var(--main-text-color);
     font-size: 36px;
-    margin-top: 50px;
 }
 
 main p {
     color: white;
     font-size: 18px;
-    margin-top: 10px;
 }
 
 
 main section h2 {
     color: var(--main-text-light);
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 main section h3 {
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 main section h4 {
