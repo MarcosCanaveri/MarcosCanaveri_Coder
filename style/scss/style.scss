@@ -1,0 +1,89 @@
+// Base
+@use"./base/reset";
+@use"./base/variables";
+
+// Layout
+@use"./layout/header";
+
+// Pages
+@use"./pages/loqueviene";
+
+
+/*variables CSS*/
+:root {
+    --main-backgroundcolor: #540d6e;
+    --main-color-secondary: #ee4266;
+    --main-text-color: #0ead69;
+    --main-text-light: #3bceac;
+    --main-extra-color: #ffd23f;
+}
+
+/***** LAYOUT *****/
+
+main section h4 {
+    font-size: 22px;
+}
+
+main section h5 {
+    font-size: 20px;
+}
+
+/*****section*****/
+section {
+    background-color: var(--main-color-secondary);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.elemento {
+    background-color: var(--main-color-secondary);
+    width: 20%;
+    padding: 20px;
+    min-width: 200px;
+}
+
+section article img {
+    width: 350px;
+    height: 200px;
+}
+
+/*****formulario*****/
+section form {
+    padding-top: 20px;
+    text-align: start;
+}
+
+/*****inicio*****/
+.inicio {
+    color: var(--main-extra-color);
+}
+
+/*****footer*****/
+#footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/***** Componentes ******/
+.boton {
+    background-color: var(--main-extra-color);
+    color: var(--main-backgroundcolor);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: #0ead69;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
