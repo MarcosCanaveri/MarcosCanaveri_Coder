@@ -18,6 +18,17 @@ ul, ol {
   --main-extra-color: #ffd23f;
 }
 
+.boton {
+  background-color: var(--main-extra-color);
+  color: var(--main-backgroundcolor);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.boton:hover {
+  background-color: #0ead69;
+}
+
 .navbar {
   background-color: var(--main-backgroundcolor);
   color: var(--main-extra-color);
@@ -53,11 +64,45 @@ header nav ul li {
   margin: 0 10px;
 }
 
-.alineacion {
-  align-items: flex-end;
-
+main {
+  background-color: var(--main-color-secondary);
+  text-align: center;
 }
-/* Pagina lo que viene*/
+main section h1 {
+  text-align: center;
+  font-family: "Bungee Tint", sans-serif;
+  text-decoration-color: var(--main-text-color);
+  font-size: 36px;
+}
+main section p {
+  color: white;
+  font-size: 18px;
+}
+main section h2 {
+  color: var(--main-text-light);
+  font-size: 30px;
+  margin-top: 0px;
+}
+main section h3 {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+main section h4 {
+  font-size: 22px;
+}
+
+main section h5 {
+  font-size: 20px;
+}
+
+#footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
 .lqvbody {
   background-color: var(--main-backgroundcolor);
   color: var(--main-text-color);
@@ -114,27 +159,7 @@ header nav ul li {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 1024px) {
-  .lqvbody {
-    grid-template-areas: "lqvheader    lqvheader   lqvheader" "lqvsection1  lqvmain     lqvaside" "lqvsection1  lqvsection  lqvaside" "lqvsection1  lqvfooter   lqvaside";
-    grid-template-columns: 150px 1fr 20%;
-    grid-template-rows: 50px auto auto auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .lqvbody {
-    grid-template-areas: "lqvheader lqvsection1" "lqvheader lqvmain" "lqvheader lqvsection" "lqvheader lqvaside" "lqvheader lqvfooter";
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 50px auto auto auto 150px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .lqvbody {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 390px) {
   .lqvbody {
     grid-template-areas: "lqvheader" "lqvsection1" "lqvmain" "lqvsection" "lqvaside" "lqvfooter";
     grid-template-columns: auto;
@@ -144,21 +169,21 @@ header nav ul li {
 @media screen and (min-width: 768px) {
   .lqvbody {
     grid-template-areas: "lqvheader lqvsection1" "lqvheader lqvmain" "lqvheader lqvsection" "lqvheader lqvaside" "lqvheader lqvfooter";
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 50px auto auto auto 150px;
   }
 }
 @media screen and (min-width: 992px) {
   .lqvbody {
     grid-template-areas: "lqvheader    lqvheader   lqvheader" "lqvsection1  lqvmain     lqvaside" "lqvsection1  lqvsection  lqvaside" "lqvsection1  lqvfooter   lqvaside";
-    grid-template-columns: 150px 1fr 20%;
+    grid-template-columns: 200px 1fr 20%;
     grid-template-rows: 50px auto auto auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .lqvbody {
-    grid-template-areas: "lqvheader lqvheader lqvheader  lqvheader" "lqvsection1  lqvmain   lqvsection lqvaside" "lqvsection1  lqvmain   lqvsection lqvaside" "lqvsection1  lqvfooter lqvfooter  lqvaside";
-    grid-template-columns: 150px 1fr 1fr 20%;
+    grid-template-areas: "lqvheader    lqvheader lqvheader  lqvheader" "lqvsection1  lqvmain   lqvsection lqvaside" "lqvsection1  lqvmain   lqvsection lqvaside" "lqvsection1  lqvfooter lqvfooter  lqvaside";
+    grid-template-columns: 200px 1fr 1fr 20%;
     grid-template-rows: 50px auto auto auto;
   }
 }

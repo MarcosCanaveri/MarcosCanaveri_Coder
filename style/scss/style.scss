@@ -2,12 +2,17 @@
 @use"./base/reset";
 @use"./base/variables";
 
+// componentes
+@use"./componentes/boton";
+
 // Layout
 @use"./layout/header";
+@use"./layout/main";
+@use"./layout/footer";
 
 // Pages
 @use"./pages/loqueviene";
-
+@use"./pages/rankings";
 
 /*variables CSS*/
 :root {
@@ -86,4 +91,3 @@ header .logo img {
     height: 50px;
     margin-right: 10px;
 }
-

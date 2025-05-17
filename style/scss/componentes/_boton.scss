@@ -1,0 +1,11 @@
+// boton
+.boton {
+  background-color: var(--main-extra-color);
+  color: var(--main-backgroundcolor);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.boton:hover {
+  background-color: #0ead69;
+}
