@@ -187,6 +187,92 @@ main section h5 {
     grid-template-rows: 50px auto auto auto;
   }
 }
+.rbody {
+  background-color: var(--main-backgroundcolor);
+  color: var(--main-text-color);
+  font-size: 24px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto auto auto auto;
+}
+
+.rheader {
+  grid-area: rheader;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.rhead {
+  grid-area: rhead;
+  background-color: var(--main-color-secondary);
+  flex-direction: column;
+}
+
+.rtabla1 {
+  grid-area: rtabla1;
+  background-color: var(--main-color-secondary);
+  flex-direction: column;
+}
+
+.rarticle1 {
+  grid-area: rarticle1;
+  background-color: var(--main-color-secondary);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.rtabla2 {
+  grid-area: rtabla2;
+  background-color: var(--main-color-secondary);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.rarticle2 {
+  grid-area: rarticle2;
+  background-color: var(--main-color-secondary);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.rfooter {
+  grid-area: rfooter;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 390px) {
+  .rbody {
+    grid-template-areas: "rheader" "rhead" "rtabla1" "rarticle1" "rtabla2" "rarticle2" "lqvfooter";
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto auto auto 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rbody {
+    grid-template-areas: "rheader" "rhead" "rtabla1" "rarticle1" "rtabla2" "rarticle2" "lqvfooter";
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto auto auto 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .rbody {
+    grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px auto auto auto auto;
+  }
+}
 /*variables CSS*/
 :root {
   --main-backgroundcolor: #540d6e;
