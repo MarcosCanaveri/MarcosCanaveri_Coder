@@ -95,14 +95,17 @@
     grid-template-rows: 50px auto auto auto;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 12000px) {
   .lqvbody {
     grid-template-areas: 
     "lqvheader    lqvheader lqvheader  lqvheader" 
     "lqvsection1  lqvmain   lqvsection lqvaside" 
     "lqvsection1  lqvmain   lqvsection lqvaside" 
     "lqvsection1  lqvfooter lqvfooter  lqvaside";
-    grid-template-columns: 200px 1fr 1fr 20%;
+    grid-template-columns: 200px 1fr 1fr 20%;  
     grid-template-rows: 50px auto auto auto;
+  }
+  .nav-link {
+    font-size: 15px;
   }
 }

@@ -1,3 +1,4 @@
+// Header
 .navbar {
   background-color: var(--main-backgroundcolor);
   color: var(--main-extra-color);
@@ -10,8 +11,9 @@
   color: var(--main-extra-color);
 }
 
-.navbar .nav-link {
+.navbar .nav-link{
   color: var(--main-extra-color);
+  font-size: 24px;
 }
 
 header a {

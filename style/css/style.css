@@ -43,6 +43,7 @@ ul, ol {
 
 .navbar .nav-link {
   color: var(--main-extra-color);
+  font-size: 24px;
 }
 
 header a {
@@ -180,11 +181,14 @@ main section h5 {
     grid-template-rows: 50px auto auto auto;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 12000px) {
   .lqvbody {
     grid-template-areas: "lqvheader    lqvheader lqvheader  lqvheader" "lqvsection1  lqvmain   lqvsection lqvaside" "lqvsection1  lqvmain   lqvsection lqvaside" "lqvsection1  lqvfooter lqvfooter  lqvaside";
     grid-template-columns: 200px 1fr 1fr 20%;
     grid-template-rows: 50px auto auto auto;
+  }
+  .nav-link {
+    font-size: 15px;
   }
 }
 .rbody {
@@ -326,25 +330,7 @@ section form {
   color: var(--main-extra-color);
 }
 
-/*****footer*****/
-#footer {
-  color: white;
-  background-color: black;
-  text-align: center;
-}
-
 /***** Componentes ******/
-.boton {
-  background-color: var(--main-extra-color);
-  color: var(--main-backgroundcolor);
-  padding: 5px 10px;
-  border-radius: 8px;
-}
-
-.boton:hover {
-  background-color: #0ead69;
-}
-
 header .logo img {
   height: 50px;
   margin-right: 10px;
