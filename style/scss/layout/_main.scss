@@ -5,6 +5,7 @@ main {
 
     section {
         h1 {
+            color: white;
             text-align: center;
             font-family: "Bungee Tint", sans-serif;
             text-decoration-color: var(--main-text-color);
@@ -12,12 +13,12 @@ main {
         }
 
         p {
-            color: white;
+            color: black;
             font-size: 18px;
         }
 
         h2 {
-            color: var(--main-text-light);
+            color: black;
             font-size: 30px;
             margin-top: 0px;
         }
@@ -27,13 +28,13 @@ main {
             margin-top: 0px;
             margin-bottom: 0px;
         }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
     }
-}
-
-main section h4 {
-    font-size: 22px;
-}
-
-main section h5 {
-    font-size: 20px;
 }

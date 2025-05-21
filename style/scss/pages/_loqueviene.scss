@@ -1,7 +1,7 @@
 // Pagina lo que viene
 .lqvbody {
-  background-color: var(--main-backgroundcolor);
-  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  color: white;
   font-size: 24px;
   min-height: 100vh;
   display: grid;
@@ -16,6 +16,7 @@
 
 .lqvheader {
   grid-area: lqvheader;
+  color:white;
   padding: 0;
   align-items: center;
   justify-content: space-between;
@@ -24,18 +25,25 @@
 
 .lqvsection1 {
   grid-area: lqvsection1;
+  color: white;
   background-color: var(--main-color-secondary);
   flex-direction: column;
 }
 
 .lqvmain {
   grid-area: lqvmain;
+  color: white;
   background-color: var(--main-color-secondary);
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+
 }
 
 .lqvsection {
   grid-area: lqvsection;
+  color: white;
   background-color: var(--main-color-secondary);
   flex-direction: column;
   align-items: center;
@@ -69,19 +77,18 @@
     "lqvaside" 
     "lqvfooter";
     grid-template-columns: auto;
-    grid-template-rows: 100px auto auto auto auto 150px;
+    grid-template-rows: 100px auto auto auto auto auto;
   }
 }
 @media screen and (min-width: 768px) {
   .lqvbody {
     grid-template-areas: 
-    "lqvheader lqvsection1" 
-    "lqvheader lqvmain" 
-    "lqvheader lqvsection" 
-    "lqvheader lqvaside" 
-    "lqvheader lqvfooter";
+    "lqvheader   lqvheader" 
+    "lqvmain     lqvsection" 
+    "lqvsection1 lqvaside" 
+    "lqvfooter   lqvfooter";
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 50px auto auto auto 150px;
+    grid-template-rows: 50px auto auto auto;
   }
 }
 @media screen and (min-width: 992px) {
@@ -95,7 +102,7 @@
     grid-template-rows: 50px auto auto auto;
   }
 }
-@media screen and (min-width: 12000px) {
+@media screen and (min-width: 1200px) {
   .lqvbody {
     grid-template-areas: 
     "lqvheader    lqvheader lqvheader  lqvheader" 

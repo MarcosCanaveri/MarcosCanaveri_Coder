@@ -1,0 +1,29 @@
+// section
+section {
+    background-color: var(--main-color-secondary);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.elemento {
+    background-color: var(--main-color-secondary);
+    width: 20%;
+    padding: 20px;
+    min-width: 200px;
+    overflow: hidden;
+}
+
+section article img {
+    width: 350px;
+    height: 200px;
+}
+
+section form {
+    padding-top: 20px;
+    text-align: start;
+}
