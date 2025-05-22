@@ -1,6 +1,6 @@
 // Pagina lo que viene
 .lqvbody {
-  background-color: var(--main-background-color);
+  background-color: var(--main-backgroundcolor);
   color: white;
   font-size: 24px;
   min-height: 100vh;
@@ -15,6 +15,7 @@
 }
 
 .lqvheader {
+  background-color: var(--main-backgroundcolor);
   grid-area: lqvheader;
   color:white;
   padding: 0;
@@ -62,9 +63,11 @@
 
 .lqvfooter {
   grid-area: lqvfooter;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 390px) {

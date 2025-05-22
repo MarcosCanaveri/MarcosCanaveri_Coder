@@ -7,4 +7,19 @@
 
 ul, ol {
     list-style: none;
+    margin-bottom: 0;
+}
+
+a {
+  color: rgb(33, 33, 33);
+text-decoration: none;
+}
+
+a:hover{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+footer {
+  margin-bottom: 0;
 }

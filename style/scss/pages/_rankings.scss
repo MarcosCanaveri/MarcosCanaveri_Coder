@@ -1,7 +1,7 @@
-// Pagina lo que viene
+// Pagina raanking
 .rbody {
   background-color: var(--main-backgroundcolor);
-  color: var(--main-text-color);
+  color: black;
   font-size: 24px;
   min-height: 100vh;
   display: grid;
@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
+  text-align: center;
 }
 
 .rhead {
@@ -33,6 +34,8 @@
   grid-area: rtabla1;
   background-color: var(--main-color-secondary);
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .rarticle1 {
@@ -74,9 +77,12 @@
     "rarticle1" 
     "rtabla2" 
     "rarticle2" 
-    "lqvfooter";
+    "rfooter";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto auto auto 150px;
+  }
+  .rtabla1 {
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -87,8 +93,12 @@
   "rtabla1    rtabla2" 
   "rarticle1  rarticle2"
   "rfooter    rfooter";
-    grid-template-columns: auto;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 100px auto auto auto auto 150px;
+  }
+  .table {
+   margin-right: auto;
+   margin-left: auto;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -99,7 +109,7 @@
   "rtabla1    rtabla2" 
   "rarticle1  rarticle2"
   "rfooter    rfooter";
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 50px auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto auto auto 100%;
   }
 }

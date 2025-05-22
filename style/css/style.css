@@ -7,6 +7,21 @@
 
 ul, ol {
   list-style: none;
+  margin-bottom: 0;
+}
+
+a {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+footer {
+  margin-bottom: 0;
 }
 
 /*variables CSS*/
@@ -141,7 +156,7 @@ section form {
 }
 
 .lqvbody {
-  background-color: var(--main-background-color);
+  background-color: var(--main-backgroundcolor);
   color: white;
   font-size: 24px;
   min-height: 100vh;
@@ -152,6 +167,7 @@ section form {
 }
 
 .lqvheader {
+  background-color: var(--main-backgroundcolor);
   grid-area: lqvheader;
   color: white;
   padding: 0;
@@ -198,9 +214,11 @@ section form {
 
 .lqvfooter {
   grid-area: lqvfooter;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 390px) {
@@ -236,7 +254,7 @@ section form {
 }
 .rbody {
   background-color: var(--main-backgroundcolor);
-  color: var(--main-text-color);
+  color: black;
   font-size: 24px;
   min-height: 100vh;
   display: grid;
@@ -251,6 +269,7 @@ section form {
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
+  text-align: center;
 }
 
 .rhead {
@@ -263,6 +282,8 @@ section form {
   grid-area: rtabla1;
   background-color: var(--main-color-secondary);
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .rarticle1 {
@@ -297,23 +318,30 @@ section form {
 
 @media screen and (min-width: 390px) {
   .rbody {
-    grid-template-areas: "rheader" "rhead" "rtabla1" "rarticle1" "rtabla2" "rarticle2" "lqvfooter";
+    grid-template-areas: "rheader" "rhead" "rtabla1" "rarticle1" "rtabla2" "rarticle2" "rfooter";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto auto auto 150px;
+  }
+  .rtabla1 {
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 768px) {
   .rbody {
     grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
-    grid-template-columns: auto;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 100px auto auto auto auto 150px;
+  }
+  .table {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .rbody {
     grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 50px auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px auto auto auto 100%;
   }
 }
 
