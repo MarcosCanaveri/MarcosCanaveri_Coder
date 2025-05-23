@@ -39,7 +39,9 @@
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
-
+h2 {
+  color: white;
+}
 }
 
 .lqvsection {
@@ -59,6 +61,12 @@
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
+  h2{
+    color: white
+  }
+  ul li{
+    color: black
+  }
 }
 
 .lqvfooter {

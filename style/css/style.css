@@ -192,6 +192,9 @@ section form {
   justify-content: space-between;
   justify-content: space-around;
 }
+.lqvmain h2 {
+  color: white;
+}
 
 .lqvsection {
   grid-area: lqvsection;
@@ -210,6 +213,12 @@ section form {
   align-items: center;
   justify-content: space-between;
   justify-content: space-around;
+}
+.lqvaside h2 {
+  color: white;
+}
+.lqvaside ul li {
+  color: black;
 }
 
 .lqvfooter {
@@ -322,19 +331,44 @@ section form {
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto auto auto 150px;
   }
-  .rtabla1 {
-    font-size: 8px;
+  .rbody .rtabla1 {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .rbody .rarticle1 {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .rbody .rtabla2 {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .rbody .rarticle2 {
+    font-size: 10px;
+    padding: 5px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .rbody {
     grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
     grid-template-columns: 50% 50%;
     grid-template-rows: 100px auto auto auto auto 150px;
   }
-  .table {
-    margin-right: auto;
-    margin-left: auto;
+  .rbody .rtabla1 {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .rbody .rtabla2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .rbody .rarticle1 {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .rbody .rarticle2 {
+    padding: 10px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -343,6 +377,23 @@ section form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px auto auto auto 100%;
   }
+}
+.ulcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.video {
+  padding: 10px;
+}
+
+.formcontainer {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

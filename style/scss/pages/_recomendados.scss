@@ -1,1 +1,14 @@
 // Página recomendados
+.ulcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.video {
+    padding: 10px;
+}
+
