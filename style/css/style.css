@@ -99,6 +99,11 @@ header nav ul li {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1120px) {
+  .navbar .nav-link {
+    font-size: 18px;
+  }
+}
 main {
   background-color: var(--main-color-secondary);
   text-align: center;
@@ -243,7 +248,7 @@ section form {
 
 @media screen and (min-width: 390px) {
   .lqvbody {
-    grid-template-areas: "lqvheader" "lqvsection1" "lqvmain" "lqvsection" "lqvaside" "lqvfooter";
+    grid-template-areas: "lqvheader" "lqvmain" "lqvsection1" "lqvsection" "lqvaside" "lqvfooter";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto auto auto auto;
   }
@@ -272,6 +277,10 @@ section form {
     font-size: 15px;
   }
 }
+.navcontainer {
+  display: flex;
+}
+
 .rbody {
   background-color: var(--main-backgroundcolor);
   color: black;
@@ -399,6 +408,15 @@ section form {
 }
 
 .video {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  background-color: var(--main-color-secondary);
   padding: 10px;
 }
 

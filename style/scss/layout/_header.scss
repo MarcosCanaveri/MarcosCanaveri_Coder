@@ -50,3 +50,8 @@ header nav ul li {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1120px) {
+  .navbar .nav-link {
+ font-size: 18px;
+}
+}
