@@ -61,6 +61,7 @@ footer {
   padding: 0px;
   display: flex;
   justify-content: space-around;
+  line-height: normal;
 }
 
 .navbar-brand {
@@ -250,7 +251,7 @@ section form {
   .lqvbody {
     grid-template-areas: "lqvheader" "lqvmain" "lqvsection1" "lqvsection" "lqvaside" "lqvfooter";
     grid-template-columns: auto;
-    grid-template-rows: 100px auto auto auto auto auto;
+    grid-template-rows: 50px auto auto auto auto auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -349,7 +350,7 @@ section form {
   .rbody {
     grid-template-areas: "rheader" "rhead" "rtabla1" "rarticle1" "rtabla2" "rarticle2" "rfooter";
     grid-template-columns: auto;
-    grid-template-rows: 100px auto auto auto auto 150px;
+    grid-template-rows: 50px auto auto auto auto 150px;
   }
   .rbody .rtabla1 {
     font-size: 10px;
@@ -372,7 +373,7 @@ section form {
   .rbody {
     grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px auto auto auto auto 150px;
+    grid-template-rows: 50px auto auto auto auto 150px;
   }
   .rbody .rtabla1 {
     font-size: 18px;
