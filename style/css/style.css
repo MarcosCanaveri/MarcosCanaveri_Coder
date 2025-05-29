@@ -297,7 +297,6 @@ section form {
   grid-area: rheader;
   padding: 0;
   align-items: center;
-  justify-content: space-between;
   justify-content: space-around;
   text-align: center;
 }
@@ -412,6 +411,11 @@ section form {
   padding: 10px;
 }
 
+@media screen and (max-width: 640px) {
+  .iframevideo {
+    width: 400px;
+  }
+}
 h1 {
   text-align: center;
 }
