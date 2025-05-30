@@ -110,7 +110,7 @@
   "rarticle1  rarticle2"
   "rfooter    rfooter";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px auto auto auto auto 150px;
+    grid-template-rows: 50px auto auto auto auto auto;
     .rtabla1 {
       font-size: 18px;
       padding: 10px;
@@ -140,7 +140,7 @@
   "rarticle1  rarticle2"
   "rfooter    rfooter";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px auto auto auto 100%;
+  grid-template-rows: 50px auto auto auto auto;
   }
   }
 

@@ -100,6 +100,10 @@ header nav ul li {
   margin: 0 10px;
 }
 
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
 @media screen and (max-width: 1120px) {
   .navbar .nav-link {
     font-size: 18px;
@@ -372,7 +376,7 @@ section form {
   .rbody {
     grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px auto auto auto auto 150px;
+    grid-template-rows: 50px auto auto auto auto auto;
   }
   .rbody .rtabla1 {
     font-size: 18px;
@@ -395,7 +399,7 @@ section form {
   .rbody {
     grid-template-areas: "rheader    rheader" "rhead      rhead" "rtabla1    rtabla2" "rarticle1  rarticle2" "rfooter    rfooter";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto auto auto 100%;
+    grid-template-rows: 50px auto auto auto auto;
   }
 }
 .ulcontainer {
@@ -423,6 +427,11 @@ h1 {
 form {
   background-color: var(--main-color-secondary);
   padding: 10px;
+}
+
+.marginform {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
