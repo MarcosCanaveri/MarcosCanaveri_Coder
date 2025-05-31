@@ -176,6 +176,12 @@ section form {
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  .map {
+    width: 200px;
+    height: 150px;
+  }
+}
 .lqvbody {
   background-color: var(--main-backgroundcolor);
   color: white;
@@ -251,7 +257,7 @@ section form {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 200px) {
   .lqvbody {
     grid-template-areas: "lqvheader" "lqvmain" "lqvsection1" "lqvsection" "lqvaside" "lqvfooter";
     grid-template-columns: auto;
