@@ -176,6 +176,10 @@ section form {
   text-align: center;
 }
 
+ul {
+  padding-right: 2rem;
+}
+
 @media screen and (max-width: 500px) {
   .map {
     width: 200px;
@@ -355,7 +359,7 @@ section form {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 320px) {
   .rbody {
     grid-template-areas: "rheader" "rhead" "rtabla1" "rarticle1" "rtabla2" "rarticle2" "rfooter";
     grid-template-columns: auto;
@@ -424,6 +428,11 @@ section form {
 @media screen and (max-width: 640px) {
   .iframevideo {
     width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .iframevideo {
+    width: 250px;
   }
 }
 h1 {
